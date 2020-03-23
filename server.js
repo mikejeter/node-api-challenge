@@ -13,7 +13,7 @@ server.use('/api/actions', actionRouter);
 
 
 server.get('/', (req, res) => {
-    res.send(`<h2>Sprint Challenge: Projects & Actions<h2>`);
+    res.send(`<h2>Sprint Challenge: node-api-challenge<h2>`);
 });
 
 function methodLogger(req, res, next) {
