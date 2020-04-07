@@ -27,4 +27,16 @@ router.delete("/:id", validateId, (req, res) => {
     );
 });
 
+router.put("/:id", validateId, (req, res) => {
+  const { id } = req.params;
+  const changes = req.body;
+
+  actionDb
+    .update(id, changes)
+    .then(() => res.status(200).json(`${req.action.description} was updated`))
+    .catch(err =>
+      res.status(500).json({ message: "Server was unable to update action", err })
+    );
+});
+
 module.exports = router;
