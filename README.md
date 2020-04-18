@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+You can write a lot of endpoints for an api, learning about server-side routing with express allows you to break down your request handlers into different sections based on the url and http-method combination. Express Middleware allows you to add features and functionality that is not included with the express packge.
+
 - [ ] Describe Middleware?
+
+Middleware are implimented as small functions that handle parts of the request handlers like logging and authentication.
 
 - [ ] Describe a Resource?
 
+A resource is a piece of data in the databse that is returned to the client through a get request handler like a database record and then that resource is returned to the client.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+We can provide information to the client to indicate the request was successful by paasing http status code in the response.
+
 - [ ] How can we partition our application into sub-applications?
+
+Express Routers are a way to split an application into sub-applications to make it more modular and easier to maintain and reason about.
 
 ## Minimum Viable Product
 
